@@ -1412,13 +1412,14 @@ function searchData(inputNIM) {
 
   if (data.length >= 1) {
     document.getElementById('header').innerHTML = data[0].nama_lengkap;
-    document.getElementById('nama_lengkap').innerHTML = 'Nama Lengkap :' + data[0].nama_lengkap;
-    document.getElementById('nama_panggilan').innerHTML = 'Nama Panggilan :' + data[0].nama_panggilan;
-    document.getElementById('no_telepon').innerHTML = 'Nomor Telepon :' + data[0].nomor_telepon;
-    document.getElementById('id_line').innerHTML = 'ID LINE :' + data[0].id_line;
-    document.getElementById('tgl_lahir').innerHTML = 'Tanggal Lahir :' + data[0].tanggal_lahir;
-    document.getElementById('email').innerHTML = 'Email :' + data[0].email;
-    document.getElementById('hobi').innerHTML = 'Hobi :' + data[0].hobi;
+    document.getElementById('nama_lengkap').innerHTML = data[0].nama_lengkap;
+    document.getElementById('nim').innerHTML = data[0].nim;
+    document.getElementById('nama_panggilan').innerHTML = data[0].nama_panggilan;
+    document.getElementById('no_telepon').innerHTML =  data[0].nomor_telepon;
+    document.getElementById('id_line').innerHTML = data[0].id_line;
+    document.getElementById('tgl_lahir').innerHTML =  data[0].tanggal_lahir;
+    document.getElementById('email').innerHTML = data[0].email;
+    document.getElementById('hobi').innerHTML = data[0].hobi;
   } else {
     document.getElementById('header').innerHTML = 'Data Tidak Ditemukan';
     document.getElementById('nama_lengkap').innerHTML = '';

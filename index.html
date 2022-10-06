@@ -9,24 +9,59 @@
     <script src="main.js"></script>
     <title>Kelompok 4</title>
   </head>
-  <body>
+  <body style="margin:auto;max-width: 500px;">
     <h1>
       Praktikum RPLBK Kelompok 4
       <br />
       Tugas Modul 1
     </h1>
 
-    <input type="number" placeholder="NIM Mahasiswa" onkeyup="searchData(this)" />
+    <input type="number" placeholder="NIM Mahasiswa" onkeyup="searchData(this)" /> <br><br>
 
     <!--   All value must be here   -->
     <h2 id="header">Data Tidak Ditemukan</h2>
-    <h4 id="nama_lengkap"></h4>
-    <h4 id="nama_panggilan"></h4>
-    <h4 id="nim"></h4>
-    <h4 id="no_telepon"></h4>
-    <h4 id="id_line"></h4>
-    <h4 id="email"></h4>
-    <h4 id="hobi"></h4>
-    <h4 id="tgl_lahir"></h4>
+
+    <table id="tblData">
+      <tr>
+        <td>Nama Lengkap</td>
+        <td>:</td>
+        <td><p id="nama_lengkap"></p></td>
+      </tr>
+      <tr>
+        <td>Nama Panggilan</td>
+        <td>:</td>
+        <td><p id="nama_panggilan"></p></td>
+      </tr>
+      <tr>
+        <td>Nim</td>
+        <td>:</td>
+        <td><p id="nim"></p></td>
+      </tr>
+      <tr>
+        <td>No Telpon</td>
+        <td>:</td>
+        <td><p id="no_telepon"></p></td>
+      </tr>
+      <tr>
+        <td>ID Line</td>
+        <td>:</td>
+        <td><p id="id_line"></p></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>:</td>
+        <td><p id="email"></p></td>
+      </tr>
+      <tr>
+        <td>Hobi</td>
+        <td>:</td>
+        <td><p id="hobi"></p></td>
+      </tr>
+      <tr>
+        <td>Tanggal lahir</td>
+        <td>:</td>
+        <td><p id="tgl_lahir"></p></td>
+      </tr>
+    </table> 
   </body>
 </html>
